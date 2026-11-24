@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCore - My Appointments</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>MediCore</h1>
+            <p>Hospital Management System</p>
+        </div>
+
+        <div class="form-container">
+
+            <h2>My Appointments</h2>
+            <p class="subtitle">View your appointment requests</p>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Department</th>
+                            <th>Doctor</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="appointmentList">
+                        <tr>
+                            <td colspan="5">No appointments found.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <button onclick="goToBooking()">
+                Book New Appointment
+            </button>
+
+            <button class="back-button" onclick="goDashboard()">
+                Back to Dashboard
+            </button>
+
+        </div>
+
+        <footer>
+            © 2026 MediCore Hospital Management System
+        </footer>
+
+    </div>
+
+    <script src="my-appointments.js"></script>
+</body>
+</html>

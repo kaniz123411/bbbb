@@ -1,0 +1,76 @@
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCore - Patient Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>MediCore</h1>
+            <p>Patient Dashboard</p>
+        </div>
+
+        <div class="form-container">
+
+            <h2>Welcome, Patient!</h2>
+            <p class="subtitle">Manage your hospital activities</p>
+
+            <div class="dashboard-menu">
+
+                <div class="dashboard-card">
+                    <h3>My Profile</h3>
+                    <p>View your personal information.</p>
+                    <button onclick="window.location.href='profile.html'">
+              View Profile
+            </button>
+                </div>
+
+                <div class="dashboard-card">
+                    <h3>Appointments</h3>
+                    <p>Manage your doctor appointments.</p>
+                    <button onclick="window.location.href='my-appointments.html'">
+               View Appointments
+               </button>
+                </div>
+
+                <div class="dashboard-card">
+                    <h3>Medical Records</h3>
+                    <p>View your medical information.</p>
+                    <button onclick="showMessage('Medical Records')">
+                        View Records
+                    </button>
+                </div>
+
+                <div class="dashboard-card">
+                    <h3>Billing</h3>
+                    <p>View your hospital bills.</p>
+                    <button onclick="showMessage('Billing')">
+                        View Bills
+                    </button>
+                </div>
+
+            </div>
+
+            <p id="dashboardMessage"></p>
+
+            <button class="logout-button" onclick="logout()">
+                Logout
+            </button>
+
+        </div>
+
+        <footer>
+            © 2026 MediCore Hospital Management System
+        </footer>
+
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

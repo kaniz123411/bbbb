@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCore - Book Appointment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>MediCore</h1>
+            <p>Hospital Management System</p>
+        </div>
+
+        <div class="form-container">
+
+            <h2>Book an Appointment</h2>
+            <p class="subtitle">Choose your preferred doctor and schedule</p>
+
+            <form id="appointmentForm">
+
+                <div class="form-group">
+                    <label for="department">Department</label>
+                    <select id="department">
+                        <option value="">Select Department</option>
+                        <option value="Cardiology">Cardiology</option>
+                        <option value="Neurology">Neurology</option>
+                        <option value="Medicine">General Medicine</option>
+                        <option value="Orthopedics">Orthopedics</option>
+                        <option value="Dermatology">Dermatology</option>
+                        <option value="Pediatrics">Pediatrics</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="doctor">Doctor</label>
+                    <select id="doctor">
+                        <option value="">Select Doctor</option>
+                        <option value="Dr. Rahman">Dr. Rahman</option>
+                        <option value="Dr. Ahmed">Dr. Ahmed</option>
+                        <option value="Dr. Khan">Dr. Khan</option>
+                        <option value="Dr. Sultana">Dr. Sultana</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="appointmentDate">Appointment Date</label>
+                    <input type="date" id="appointmentDate">
+                </div>
+
+                <div class="form-group">
+                    <label for="appointmentTime">Appointment Time</label>
+                    <select id="appointmentTime">
+                        <option value="">Select Time</option>
+                        <option value="09:00 AM">09:00 AM</option>
+                        <option value="10:00 AM">10:00 AM</option>
+                        <option value="11:00 AM">11:00 AM</option>
+                        <option value="12:00 PM">12:00 PM</option>
+                        <option value="02:00 PM">02:00 PM</option>
+                        <option value="03:00 PM">03:00 PM</option>
+                        <option value="04:00 PM">04:00 PM</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="reason">Reason for Appointment</label>
+                    <textarea id="reason"
+                        placeholder="Briefly describe the reason for your visit"></textarea>
+                </div>
+
+                <button type="submit">Book Appointment</button>
+
+                <p id="appointmentMessage"></p>
+
+            </form>
+
+            <button type="button" onclick="goDashboard()">
+                Back to Dashboard
+            </button>
+
+        </div>
+
+        <footer>
+            © 2026 MediCore Hospital Management System
+        </footer>
+
+    </div>
+
+    <script src="appointment.js"></script>
+</body>
+</html>
